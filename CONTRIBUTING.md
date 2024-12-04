@@ -1,7 +1,3 @@
-Sure! Here's a draft for the `CONTRIBUTING.md` file for the DevSphere project:
-
----
-
 # Contributing to DevSphere
 
 Thank you for considering contributing to the DevSphere project! We welcome contributions from the community to help improve and expand our project. Please take a moment to review this guide to ensure a smooth contribution process.
