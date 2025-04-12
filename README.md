@@ -1,6 +1,7 @@
 # 🌍 DevSphere
 
 **DevSphere: An Open-Source Initiative Dedicated to Eco-Friendly Codes, Applications, Scripts, and Solutions for Developers**
+![myherb devsphere animation gif](https://github.com/user-attachments/assets/839aa151-f0aa-4527-b938-42b39dd7b238)
 
 DevSphere is an innovative open-source initiative designed to provide developers with an extensive collection of eco-friendly tools, codes, applications, scripts, and comprehensive solutions. This initiative aims to assist developers in minimizing their environmental impact throughout the software development lifecycle by offering valuable resources and knowledge that promote sustainability.
 
