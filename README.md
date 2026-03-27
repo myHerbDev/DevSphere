@@ -118,3 +118,23 @@ By designing software with sustainability as a guiding principle, developers can
 DevSphere invites developers from diverse backgrounds and regions to join the initiative and actively participate in the shared mission of fostering sustainable software development. Together, the community can create a significant and positive impact on the environment, advocate for a more sustainable future within the software industry, and inspire others to embrace similar practices. 
 
 Let us unite our skills and expertise to develop software for a greener tomorrow. 🌿vvvvvvvvvvvvvvvvvvvv
+
+## 🌿 myHerb Sustainability Shift Guidance (Prototype)
+
+To help founders move from sustainability ambition to measurable action, DevSphere now includes a lightweight prototype in `apps/myherb_shift_advisor.py`.
+
+### What it does
+- Scores six core sustainability pillars (energy, water, waste, packaging, supply chain, community).
+- Produces a weighted sustainability maturity score.
+- Classifies organizations into a maturity tier (`Starter`, `Emerging`, `Progressing`, `Leader`).
+- Suggests top 3 priority areas for the next sustainability shift sprint.
+
+### Quick run
+```bash
+python apps/myherb_shift_advisor.py
+```
+
+### Run tests
+```bash
+cd apps && python -m unittest test_myherb_shift_advisor.py
+```
