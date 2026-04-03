@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="myHerb — Data-driven sustainability shift guidance with modern analytics and practical actions."
+    />
+    <title>myHerb | Sustainability Shift Guidance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+
+    <header class="topbar container">
+      <a class="brand" href="#">
+        <span class="brand__word"><em>my</em>Herb</span>
+        <svg class="brand__leaf" viewBox="0 0 64 45" aria-hidden="true">
+          <path
+            d="M6 21.8C24 24.6 35.8 18.8 49.1 4.9C48.4 18.5 41.2 31.2 26.1 35.7C16.1 38.7 9.3 34.1 6 21.8Z"
+          ></path>
+          <path
+            d="M30.7 29.2C40.8 31.3 47.9 28.4 57.6 18.2C56.9 28.3 52 37.5 42 40.7C35 43 31.3 39.7 30.7 29.2Z"
+          ></path>
+        </svg>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#solution">Solution</a>
+        <a href="#impact">Impact</a>
+        <a href="#assess">Assessment</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="solution">
+        <div>
+          <p class="eyebrow">Data-driven sustainability shift guidance</p>
+          <h1>Build a greener business strategy with confidence.</h1>
+          <p class="lead">
+            myHerb blends measurable sustainability analytics with practical,
+            prioritized action plans. Minimal interface, maximum clarity.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#assess">Start quick assessment</a>
+            <a class="btn btn--ghost" href="#impact">See impact model</a>
+          </div>
+          <ul class="metrics" aria-label="Key proof points">
+            <li><strong>6</strong><span>Core pillars</span></li>
+            <li><strong>3</strong><span>Top priorities per sprint</span></li>
+            <li><strong>&lt;2m</strong><span>To receive first guidance</span></li>
+          </ul>
+        </div>
+        <aside class="hero-card float">
+          <h2>Shift Snapshot</h2>
+          <p>Organization maturity:</p>
+          <p class="hero-card__tier" id="tierBadge">Progressing</p>
+          <p class="hero-card__score"><span id="scoreNumber">67.4</span>/100</p>
+          <div class="progress" role="img" aria-label="Current shift score">
+            <span id="progressBar"></span>
+          </div>
+          <p class="muted">Updated from your latest scenario simulation.</p>
+        </aside>
+      </section>
+
+      <section class="section container" id="impact">
+        <h2>Why teams choose myHerb</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Actionable intelligence</h3>
+            <p>
+              Translate scores into immediate decisions: what to fix now, what to
+              scale next, and what to monitor.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Founder-ready simplicity</h3>
+            <p>
+              Designed in a clean, Google-like style that keeps complex
+              sustainability data understandable for every stakeholder.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Guidance that inspires</h3>
+            <p>
+              Prioritized recommendations and progress storytelling help teams
+              maintain momentum and attract mission-aligned visitors.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="assess">
+        <div class="section__head">
+          <h2>Quick sustainability assessment</h2>
+          <p>Set each pillar from 0–100 and get your tailored shift guidance.</p>
+        </div>
+
+        <form id="assessmentForm" class="assess-grid">
+          <label>Energy <input type="number" min="0" max="100" value="58" name="energy" /></label>
+          <label>Water <input type="number" min="0" max="100" value="63" name="water" /></label>
+          <label>Waste <input type="number" min="0" max="100" value="47" name="waste" /></label>
+          <label>Packaging <input type="number" min="0" max="100" value="52" name="packaging" /></label>
+          <label>Supply chain <input type="number" min="0" max="100" value="60" name="supply_chain" /></label>
+          <label>Community <input type="number" min="0" max="100" value="71" name="community" /></label>
+          <button class="btn btn--primary" type="submit">Generate guidance</button>
+        </form>
+
+        <article class="result" id="result" aria-live="polite">
+          <h3>Recommendations</h3>
+          <p class="muted">Submit your assessment to view recommendations.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> myHerb — Sustainable growth, intelligently guided.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
